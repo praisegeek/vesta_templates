@@ -18,7 +18,7 @@ To install thoose templates just:
 ```sh
 cd /usr/local/vesta/data/templates/web
 git clone https://github.com/praisegeek/vesta_templates.git
-cp -R vesta_templates/apache2 .
-cp -R vesta_templates/nginx .
-rm -R vesta_templates
+cp -R -u vesta_templates/apache2 .
+cp -R -u vesta_templates/nginx .
+rm -rfd vesta_templates
 ```
