@@ -19,6 +19,6 @@ To install thoose templates just:
 cd /usr/local/vesta/data/templates/web
 git clone https://github.com/praisegeek/vesta_templates.git
 cp -R -u vesta_templates/apache2 .
-cp -R -u vesta_templates/nginx .
-rm -rfd vesta_templates
+cp -R -u vesta_templates/nginx/*. nginx/php5-fpm/
+rm -rfd vesta_templates && sudo service vesta restart
 ```
