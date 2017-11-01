@@ -10,6 +10,7 @@ Work with vesta 0.9.8
 * Drupal 7
 * Redmine
 * Laravel 5.1
+* Phoenix 1.2
 
 ### Installation
 To install thoose templates just:
