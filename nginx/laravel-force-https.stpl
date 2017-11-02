@@ -35,5 +35,5 @@ server {
     include     /etc/nginx/conf.d/phppgadmin.inc*;
     include     /etc/nginx/conf.d/webmail.inc*;
     
-    include %home%/%user%/conf/web/s%proxy_system%.%domain%.conf*;
+    include %home%/%user%/conf/web/%proxy_system%.%domain%.conf*;
 }
