@@ -22,7 +22,7 @@ server {
     }
 
     location @fallback {
-        proxy_pass      http://%ip%:%web_ssl_port%;
+        proxy_pass      http://localhost:4002;
     }
 
     location ~ /\.ht    {return 404;}
