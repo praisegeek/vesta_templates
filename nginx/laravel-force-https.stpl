@@ -30,6 +30,10 @@ server {
     location ~ /\.git/  {return 404;}
     location ~ /\.hg/   {return 404;}
     location ~ /\.bzr/  {return 404;}
-
+    
+    include     /etc/nginx/conf.d/phpmyadmin.inc*;
+    include     /etc/nginx/conf.d/phppgadmin.inc*;
+    include     /etc/nginx/conf.d/webmail.inc*;
+    
     include %home%/%user%/conf/web/s%proxy_system%.%domain%.conf*;
 }
