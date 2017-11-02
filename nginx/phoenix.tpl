@@ -1,5 +1,5 @@
 server {
-    listen      %ip%:%proxy_ssl_port%;
+    listen      %ip%:%web_ssl_port%;
     server_name %domain_idn% %alias_idn%;
     ssl         on;
     ssl_certificate      %ssl_pem%;
@@ -7,7 +7,7 @@ server {
     error_log  /var/log/%web_system%/domains/%domain%.error.log error;
 
     location / {
-        proxy_pass      http://%ip%:%web_ssl_port%;
+        proxy_pass      http://localhost:4002;
         location ~* ^.+\.(%proxy_extentions%)$ {
             root           /var/app/%domain%/lib/simpapp-0.0.1/priv/static/;
             access_log     /var/log/%web_system%/domains/%domain%.log combined;
