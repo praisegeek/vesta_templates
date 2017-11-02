@@ -1,5 +1,5 @@
 server {
-    listen      %ip%:%web_ssl_port%;
+    listen      %ip%:%web_port%;
     server_name %domain_idn% %alias_idn%;
     ssl         on;
     ssl_certificate      %ssl_pem%;
