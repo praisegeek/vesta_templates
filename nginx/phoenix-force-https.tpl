@@ -1,7 +1,6 @@
 server {
     listen      %ip%:%web_port%;
     server_name %domain_idn% %alias_idn%;
-    location / {
-        rewrite ^(.*) https://%domain_idn%$1 permanent;
-    }
+    
+    return 301 https://$server_name$request_uri;
 }
